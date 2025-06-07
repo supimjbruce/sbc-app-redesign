@@ -1,5 +1,5 @@
 /* sbc-app-redesign */
-/* Home Page [index.js] */
+/* SBCPageTabButton [SBCPageTabButton.js] */
 
 /*By Jonathan Bruce
 JBruce, LLC
