@@ -12,18 +12,12 @@ import {View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
 import SBCPageTabButton from '../components/SBCPageTabButton';
 
 export default function Index() {
-    const iconImageSources = ({icon}) => {
-        return (
-            [{/*List of Icons*/}]
-        )
-    };
-
     return (
-        <View>
+        <View style={styles.container}>
             <View>
                 {/*<Text>Navigation Bar</Text>*/}
                 <View>
-                    <Text>{/*SBC PC Logo*/}</Text>
+                    <Text>{/*SBC Logo*/}</Text>
                 </View>
                 <View>
                     <Text>{/*Navigation Sidebar Icon*/}</Text>
@@ -101,6 +95,14 @@ export default function Index() {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 30,
+        backgroundColor: 'dodgerblue',
+    },
+
+    /*Text color: white*/ 
+
     tabPageButton: {
         alignItems: 'center',
     },
