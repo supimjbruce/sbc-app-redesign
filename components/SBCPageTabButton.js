@@ -13,9 +13,7 @@ import {View, Text, Image, StyleSheet} from 'react-native';
 export default function SBCPageTabButton({tabName}) {
     return (
         <View>
-            <Text>
-                {/*src={getImageUrl(iconImageSource)}*/}
-            </Text>
+            <Image>{/*Image for the tab button*/}</Image>
             <Text>{tabName}</Text>
         </View>
     );
