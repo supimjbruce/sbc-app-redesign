@@ -28,12 +28,12 @@ export default function Index() {
                             </View>
                             <View> {/*I think that some of these could go on the main page and switched
                             out with some of the other SBCPageTabButtons*/}
-                                <TouchableOpacity>WATCH LIVE</TouchableOpacity>
-                                <TouchableOpacity>SOCIAL MEDIA</TouchableOpacity>
-                                <TouchableOpacity>Alert Management</TouchableOpacity>
-                                <TouchableOpacity>CREDITS</TouchableOpacity>
-                                <TouchableOpacity>Push Notification History</TouchableOpacity>
-                                <TouchableOpacity>FEEDBACK & SUPPORT</TouchableOpacity>
+                                <TouchableOpacity style={styles.sideTabBarButton}>WATCH LIVE</TouchableOpacity>
+                                <TouchableOpacity style={styles.sideTabBarButton}>SOCIAL MEDIA</TouchableOpacity>
+                                <TouchableOpacity style={styles.sideTabBarButton}>Alert Management</TouchableOpacity>
+                                <TouchableOpacity style={styles.sideTabBarButton}>CREDITS</TouchableOpacity>
+                                <TouchableOpacity style={styles.sideTabBarButton}>Push Notification History</TouchableOpacity>
+                                <TouchableOpacity style={styles.sideTabBarButton}>FEEDBACK & SUPPORT</TouchableOpacity>
                             </View>
                     </View>
                 </View>                
@@ -111,5 +111,10 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: '200',
         color: 'black',
+    },
+
+    sideTabBarButton: {
+        textAlign: 'left',
+        margin: 10,
     },
 });
