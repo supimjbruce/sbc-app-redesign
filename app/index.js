@@ -7,13 +7,14 @@ jbruce.design
 .j.
 - - - - - */
 
-import React from 'react';
+import React, { useState } from 'react';
 import {View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
 import SBCPageTabButton from '../components/SBCPageTabButton';
 
 export default function Index() {
+    const [isSideTabBarActive, setSideTabBarActive] = useState(false);
     return (
-        <View style={styles.container}>
+        <View style={styles.container}> {/*Make a ternary operator so the user can press a button to hide or view these*/}
             <View>
                 {/*<Text>Navigation Bar</Text>*/}
                 <View>
@@ -36,7 +37,7 @@ export default function Index() {
                                 <TouchableOpacity style={styles.sideTabBarButton}>FEEDBACK & SUPPORT</TouchableOpacity>
                             </View>
                     </View>
-                </View>                
+                </View> 
             </View>
             <View>
                 <View>
@@ -100,8 +101,6 @@ const styles = StyleSheet.create({
         padding: 30,
         backgroundColor: 'dodgerblue',
     },
-
-    /*Text color: white*/ 
 
     tabPageButton: {
         alignItems: 'center',
